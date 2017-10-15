@@ -18,7 +18,7 @@ DirCreate($oDLPath)
 Sleep(2000)
 
 
-; LogIn
+; LogIn to TWSE
 $oIE = _IECreate("http://dataeshop.twse.com.tw/frontend/cht/index.jsp")
 $oFram = _IEFrameGetObjByName($oIE, "mainFrame")  ;_IEGetObjByName($oIE, "mainFrame")
 $oElements = _IETagNameGetCollection($oFram, "input")
@@ -44,7 +44,7 @@ Next
 
 ; Go DownLoad Page
 Sleep(3000)
-$oIEnew = _IEAttach("ªO∆W√“®È•Ê©ˆ©“"   )
+$oIEnew = _IEAttach("Âè∞ÁÅ£Ë≠âÂà∏‰∫§ÊòìÊâÄ"   )
 $oFram2 = _IEFrameGetObjByName($oIE, "mainFrame")
 $oForm = _IEFormGetObjByName($oFram2, "form1") ;_IETagNameGetCollection($oFram, "form")
 $oElements = _IETagNameGetCollection($oForm, "a")
@@ -124,7 +124,7 @@ Next
 
 $oElements = _IETagNameGetCollection($oFram2, "a")
 For $oElement in $oElements
-	If StringCompare( _IEPropertyGet($oElement, "innertext"), "µn•X") == 0 Then
+	If StringCompare( _IEPropertyGet($oElement, "innertext"), "¬µn¬•X") == 0 Then
 		_IEAction($oElement, "click")
 		Sleep(500)
 		ExitLoop
