@@ -124,7 +124,7 @@ Next
 
 $oElements = _IETagNameGetCollection($oFram2, "a")
 For $oElement in $oElements
-	If StringCompare( _IEPropertyGet($oElement, "innertext"), "µn¥X") == 0 Then
+	If StringCompare( _IEPropertyGet($oElement, "innertext"), "登出") == 0 Then
 		_IEAction($oElement, "click")
 		Sleep(500)
 		ExitLoop
